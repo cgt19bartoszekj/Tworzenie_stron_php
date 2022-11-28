@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    background-color: #FFF4D1;
+}
+/* Style the side navigation */
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #95CBFF;
+    overflow-x: hidden;
+}
+
+/* Side navigation links */
+.sidenav a {
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.sidenav a.active {
+    background-color: #9CAAF2;
+}
+
+/* Change color on hover */
+.sidenav a:hover {
+    background-color: #B4E5FF;
+    color: black;
+}
+
+/* Style the content */
+.content {
+    margin-left: 200px;
+    padding: 20px;
+}
+table, td, th{
+    background-color: #FFF4DD;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td, th{
+    padding: 10px;
+}
+th{
+    background-color: #dbd7cd;
+}
+
+.nav-button:hover{
+    font-size: 110%;
+    transition: 0.5s;
+}
