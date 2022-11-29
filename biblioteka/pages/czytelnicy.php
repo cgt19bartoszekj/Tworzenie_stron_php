@@ -4,7 +4,7 @@ $result = mysqli_query($conn, $query);
 $PLEC = $row['Plec'] == 'M' ? 'Mężczyzna' : 'Kobieta';
 
 if (mysqli_num_rows($result) > 0) {
-    echo '<h1>Tabela czytelnicy</h1><table><tr><th>Nr_czytelnika</th><th>Nazwisko</th><th>Imię</th><th>Data_ur</th><th>Ulica</th><th>Kod</th><th>Miasto</th><th>Data_zapisania</th><th>Data_skreslenia</th><th>Nr_legitymacji</th><th>Funkcja</th><th>Plec</th></tr>';
+    echo '<h1>Tabela czytelnicy</h1><table><tr><th>Nr_czytelnika</th><th>Nazwisko</th><th>Imię</th><th>Data_ur</th><th>Ulica</th><th>Kod</th><th>Miasto</th><th>Data_zapisania</th><th>Data_skreslenia</th><th>Nr_legitymacji</th><th>Funkcja</th><th>Płeć</th></tr>';
     while ($row = mysqli_fetch_assoc($result)) {
         echo '<tr><td>' . $row['Nr_czytelnika'] . '</td><td>' . $row['Nazwisko'] . '</td><td>' .
             $row['Imie'] . '</td><td>'
