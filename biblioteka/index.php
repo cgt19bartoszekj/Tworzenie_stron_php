@@ -39,4 +39,5 @@ session_start();
 </div>
 </body>
 <?php require 'include/db_disconnect.php'; ?>
+<script src="js/script.js"></script>
 </html>

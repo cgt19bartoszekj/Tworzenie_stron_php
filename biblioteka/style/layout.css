@@ -50,8 +50,10 @@ td, th{
 th{
     background-color: #dbd7cd;
 }
-
 .nav-button:hover{
     font-size: 110%;
     transition: 0.5s;
+}
+a:visited, a:link, a:hover, a:active{
+    text-decoration: none;
 }
