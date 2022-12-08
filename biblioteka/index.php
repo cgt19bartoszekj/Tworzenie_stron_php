@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -8,7 +11,8 @@
     <link rel="stylesheet" href="style/style.css">
     <title>Document</title>
 </head>
-<?php require 'include/db_connect.php'; ?>
+<?php require 'include/db_connect.php';
+?>
 <body>
 <div class="sidenav">
     <b><a class="nav-button <?= ($_GET['page'] ?? '') == 'glowna' ? 'active' : '' ?>" href="?page=glowna">Strona główna</a></b>
